@@ -23,7 +23,7 @@ export default function() {
     })
     var resBody = JSON.parse(res.body)
     var email =  JSON.stringify(resBody.data.email)
-    console.log(email);
+    //console.log(email);
     
     //check login and take token
     var data = {    "email": "eve.holt@reqres.in",    "password": "cityslicka"};
@@ -34,7 +34,7 @@ export default function() {
     })
     var resBodyLogin = JSON.parse(resLogin.body)
     var tokenAuth =  JSON.stringify(resBodyLogin.token)
-    console.log(tokenAuth);
+    //console.log(tokenAuth);
 
     //failed login
     var data = {    "email": "eve.holt@reqres.in"};
@@ -45,7 +45,7 @@ export default function() {
     })
     var resBodyLoginFailed = JSON.parse(resLoginFailed.body)
     var errorMessage =  JSON.stringify(resBodyLoginFailed.error)
-    console.log(errorMessage);
+    //console.log(errorMessage);
 
   sleep(1); 
 }
